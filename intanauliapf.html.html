@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intan Aulia Site's</title>
+  <link rel="icon" type="image/x-icon" href="iconscutie.png">
+
+  <style>
+    body {
+      background-color: rgb(132, 196, 225);
+      font-family: "Verdana", sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h3 {
+      color: #004080;
+    }
+
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #005f8a;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .profile img {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    .bio {
+      max-width: 500px;
+    }
+
+    .education, .table-section {
+      background: #e6f2ff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      nav ul {
+        gap: 10px;
+      }
+
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bio {
+        max-width: 90%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 10px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .profile img {
+        max-width: 150px;
+      }
+
+      table, th, td {
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Intan Aulia Profile</h1>
+    <nav>
+      <ul>
+        <li><a href="#profile">Profil</a></li>
+        <li><a href="#education">Pendidikan</a></li>
+        <li><a href="#table">Tabel Data</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile" id="profile">
+      <img src="intancutie.jpg" alt="Foto Intan Aulia">
+      <div class="bio">
+        <h3>Data Pribadi</h3>
+        <p><b>Nama Lengkap:</b> Intan Aulia</p>
+        <p><b>Tempat Tanggal Lahir:</b> Nanga Pinoh, 24 Desember 2006</p>
+        <p><b>Alamat:</b> Jl. Karya</p>
+        <p><b>Jenis Kelamin:</b> Perempuan</p>
+        <p><b>Agama:</b> Islam</p>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h3>Riwayat Pendidikan</h3>
+      <ul>
+        <li>SDN 04 Kenual</li>
+        <li>SMPN 02 Nanga Pinoh</li>
+        <li>SMAN 01 Nanga Pinoh</li>
+      </ul>
+    </section>
+
+    <section class="table-section" id="table">
+      <h3>Data dalam Tabel</h3>
+      <table>
+        <tr>
+          <th>Nama Lengkap</th>
+          <th>Tempat Tanggal Lahir</th>
+          <th>Alamat</th>
+          <th>Jenis Kelamin</th>
+          <th>Agama</th>
+        </tr>
+        <tr>
+          <td>Intan Aulia</td>
+          <td>Nanga Pinoh, 24 Desember 2006</td>
+          <td>Jl. Karya</td>
+          <td>Perempuan</td>
+          <td>Islam</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Intan Aulia. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
